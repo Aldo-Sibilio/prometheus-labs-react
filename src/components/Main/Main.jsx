@@ -1,6 +1,10 @@
+import HomePage from "../../pages/HomePage"
+
 function Main() {
     return (
-        <div>Main</div>
+        <main>
+            <HomePage />
+        </main>
     )
 }
 export default Main
