@@ -13,19 +13,39 @@ function Navbar() {
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                {/* Links */}
+                {/* Links + ricerca + carrello */}
                 <div className="collapse navbar-collapse" id="menuNavbar">
-                    <ul className="navbar-nav ms-auto">
+
+                    {/* Links navigazione */}
+                    <ul className="navbar-nav me-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="/">Home</a>
+                            <a className="nav-link" href="#">Products</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/prodotti">Prodotti</a>
+                            <a className="nav-link" href="#">About Us</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/carrello">Carrello</a>
+                            <a className="nav-link" href="#">Contact</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Login/Register</a>
                         </li>
                     </ul>
+
+                    {/* Barra di ricerca */}
+                    <form className="d-flex me-3">
+                        <input
+                            className="form-control"
+                            type="search"
+                            placeholder="Cerca..."
+                        />
+                    </form>
+
+                    {/* Icona carrello */}
+                    <a href="#" className="text-white fs-4">
+                        <i className="bi bi-cart3"></i>
+                    </a>
+
                 </div>
             </div>
         </nav>
